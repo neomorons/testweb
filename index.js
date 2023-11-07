@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const catalogData = [];
 
     // Fetch the list from the PHP file
-    fetch('index.php')
+    fetch('/api/index.php')
         .then(response => response.json())
         .then(fetchedData => {
             // Access the fetched array
