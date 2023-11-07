@@ -1,7 +1,7 @@
 {
   "version": 2,
   "functions": {
-    "api/catalog.php": {
+    "api/index.php": {
       "runtime": "vercel-php@0.1.0"
     }
   },
