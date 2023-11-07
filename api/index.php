@@ -22,7 +22,7 @@ function extractInfo($htmlContent) {
 function createArray($directory) {
     $htmlFiles = glob($directory . '/*.html');
     $array = [];
-    var_dump($htmlFiles);
+    echo json_encode($htmlFiles);
     foreach ($htmlFiles as $file) {
         $htmlContent = file_get_contents($file);
         $info = extractInfo($htmlContent);
