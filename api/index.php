@@ -40,7 +40,7 @@ function createArray($directory) {
 }
 
 // Specify the path to the "projects" folder
-$projectsFolderPath = 'projects';
+$projectsFolderPath = '../projects';
 
 // Generate the array
 $array = createArray($projectsFolderPath);
