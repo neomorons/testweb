@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/**/*.php",
-      "use": "@vercel/php"
+  "functions": {
+    "api/catalog.php": {
+      "runtime": "vercel-php@0.1.0"
     }
-  ],
+  },
   "routes": [
     { "src": "/api/index", "dest": "api/index.php" }
   ]
