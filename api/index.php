@@ -1,4 +1,6 @@
 <?php
+// Set the content type to JSON
+header('Content-Type: application/json');
 
 // Function to extract title and image path from HTML content
 function extractInfo($htmlContent) {
@@ -44,9 +46,6 @@ $projectsFolderPath = '../projects';
 
 // Generate the array
 $array = createArray($projectsFolderPath);
-
-// Set the content type to JSON
-header('Content-Type: application/json');
 
 // Output as JSON
 echo json_encode($array);
