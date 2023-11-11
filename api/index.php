@@ -22,7 +22,7 @@ function extractInfo($htmlContent) {
 function createArray($directory) {
     $htmlFiles = glob($directory . '/*.html');
     $array = [];
-    var_dump($htmlFiles);
+
     foreach ($htmlFiles as $file) {
         $htmlContent = file_get_contents($file);
         $info = extractInfo($htmlContent);
@@ -40,7 +40,7 @@ function createArray($directory) {
 }
 
 // Specify the path to the "projects" folder
-$projectsFolderPath = './projects';
+$projectsFolderPath = '../projects';
 
 // Generate the array
 $array = createArray($projectsFolderPath);
